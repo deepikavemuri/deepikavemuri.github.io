@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Presented our work on "Advancing Ante Hoc Explainable Models through Generative Adversarial Networks" at the Deployable AI and HCLR workshops at AAAI'24, Vancouver, Canada.
+Presented our work on "Advancing Ante Hoc Explainable Models through Generative Adversarial Networks" at the Deployable AI and HCLR workshops at AAAI 2024, Vancouver, Canada.
