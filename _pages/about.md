@@ -27,4 +27,5 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Deepika Vemuri, a PhD student from the AI department of IIT Hyderabad. I am part of the Machine Learning and Vision Group supervised by [Dr. Vineeth N Balasubramanian](https://people.iith.ac.in/vineethnb/index.html) where, broadly, I work on models that make use of concepts and logic to enhance the learning process while retaining interpretability. Prior to this, I was an M.Tech student in the University of Hyderabad where I did my thesis under the supervision of [Dr. Satish Narayana Srirama](https://scis.uohyd.ac.in/~srirama/) on distributed machine learning.
+I am a PhD student from the AI department at IIT Hyderabad. I am part of the Machine Learning and Vision Group supervised by [Dr. Vineeth N Balasubramanian](https://people.iith.ac.in/vineethnb/index.html) where, broadly, I explore how concept-based learning can help models learn tasks with a focus also on the interpretability of these models.
+Prior to this, I was an M.Tech student in the University of Hyderabad where I did my thesis under the supervision of [Dr. Satish Narayana Srirama](https://scis.uohyd.ac.in/~srirama/) on distributed machine learning.
