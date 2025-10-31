@@ -440,16 +440,17 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+            },},{id: "news-received-the-prime-minister-s-research-fellowship",
+          title: 'Received the Prime Minister’s Research Fellowship!',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-presented-our-work-on-advancing-ante-hoc-explainable-models-through-generative-adversarial-networks-at-the-deployable-ai-and-hclr-workshops-at-aaai-24-vancouver-canada",
+          title: 'Presented our work on “Advancing Ante Hoc Explainable Models through Generative Adversarial Networks”...',
           description: "",
           section: "News",},{id: "news-paper-on-walking-the-web-of-concept-class-relationships-in-incrementally-trained-interpretable-models-accepted-at-aaai-2025",
           title: 'Paper on “Walking the Web of Concept-Class Relationships in Incrementally Trained Interpretable Models”...',
+          description: "",
+          section: "News",},{id: "news-selected-for-the-vector-internship-will-be-hosted-at-ubc-in-feb-2026",
+          title: 'Selected for the Vector Internship! Will be hosted at UBC in Feb 2026....',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
