@@ -344,42 +344,63 @@ ul.task-list input[type="checkbox"] {
 }
 
 .navbar-toggler {
+  border: 1px solid rgba(var(--global-text-color-rgb), 0.1);
+  border-radius: 6px;
+  padding: 8px 10px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(var(--global-theme-color-rgb), 0.2);
+    outline: none;
+  }
+
+  &:hover {
+    background-color: rgba(var(--global-text-color-rgb), 0.05);
+    border-color: rgba(var(--global-text-color-rgb), 0.2);
+  }
+
   .icon-bar {
     display: block;
-    width: 22px;
+    width: 20px;
     height: 2px;
     background-color: var(--global-text-color);
-    border-radius: 1px;
-    margin-bottom: 4px;
-    transition: all 0.2s;
+    border-radius: 2px;
+    margin: 3px 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
   }
 
   .top-bar {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
+    transform: rotate(45deg) translate(6px, 6px);
+    width: 16px;
   }
 
   .middle-bar {
     opacity: 0;
+    transform: scale(0);
   }
 
   .bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
+    transform: rotate(-45deg) translate(6px, -6px);
+    width: 16px;
   }
 }
 
 .navbar-toggler.collapsed {
   .top-bar {
-    transform: rotate(0);
+    transform: rotate(0) translate(0, 0);
+    width: 20px;
   }
 
   .middle-bar {
     opacity: 1;
+    transform: scale(1);
   }
 
   .bottom-bar {
-    transform: rotate(0);
+    transform: rotate(0) translate(0, 0);
+    width: 20px;
   }
 }
 
@@ -395,29 +416,116 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Mobile Navigation Improvements
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+    background-color: var(--global-bg-color);
+    border-top: 1px solid rgba(var(--global-text-color-rgb), 0.1);
+    margin-top: 10px;
+    padding-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin: 2px 0;
+
+      .nav-link {
+        padding: 12px 16px;
+        border-radius: 6px;
+        margin: 2px 0;
+        font-weight: 500;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background-color: rgba(var(--global-theme-color-rgb), 0.1);
+          color: var(--global-theme-color);
+          transform: translateX(4px);
+        }
+      }
+
+      &.active > .nav-link {
+        background-color: rgba(var(--global-theme-color-rgb), 0.15);
+        color: var(--global-theme-color);
+        font-weight: 600;
+      }
+    }
+
+    // Special styling for search and theme toggle in mobile
+    .toggle-container,
+    li:has(#search-toggle) {
+      margin: 8px 0;
+      padding: 8px 16px;
+
+      button {
+        padding: 8px 12px;
+        border-radius: 6px;
+        background-color: rgba(var(--global-text-color-rgb), 0.05);
+        border: 1px solid rgba(var(--global-text-color-rgb), 0.1);
+        transition: all 0.2s ease;
+
+        &:hover {
+          background-color: rgba(var(--global-theme-color-rgb), 0.1);
+          border-color: var(--global-theme-color);
+        }
+
+        .nav-link {
+          padding: 0;
+          margin: 0;
+          color: var(--global-text-color);
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  // Add some spacing for dropdown menus on mobile
+  .dropdown-menu {
+    margin-top: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    
+    .dropdown-item {
+      padding: 10px 20px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: rgba(var(--global-theme-color-rgb), 0.1);
+        color: var(--global-theme-color);
+      }
+
+      &.active {
+        background-color: rgba(var(--global-theme-color-rgb), 0.15);
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
 // Social (bottom)
 
 .social {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2.5rem;
 
     a {
       img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1rem;
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: 0.5rem;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
-        margin-bottom: 0.5rem;
+        width: 2.2rem;
+        height: 2.5rem;
+        margin-bottom: 0.3rem;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 2.2rem;
+          height: 2.2rem;
         }
       }
 
