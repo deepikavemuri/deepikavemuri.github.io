@@ -522,6 +522,13 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/deepika-s-n-vemuri", "_blank");
         },
       },{
+        id: 'social-medium',
+        title: 'Medium',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://medium.com/@deepika-vemuri1", "_blank");
+        },
+      },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
