@@ -528,4 +528,11 @@ ninja.data = [{
         handler: () => {
           window.open("https://scholar.google.com/citations?user=vpTuijEAAAAJ", "_blank");
         },
+      },{
+        id: 'social-cv_pdf',
+        title: 'Cv_pdf',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/Deepika_CV.pdf", "_blank");
+        },
       },];
