@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2024-02-22 
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Presented our work on "Advancing Ante Hoc Explainable Models through Generative Adversarial Networks" at the Deployable AI and HCLR workshops at AAAI'24, Vancouver, Canada.
