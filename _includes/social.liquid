@@ -99,7 +99,7 @@
     {% when 'zotero_username' %}
       <a href="https://www.zotero.org/{{ social[1] }}" title="Zotero"><i class="ai ai-zotero"></i></a>
     {% when 'cv_pdf' %}
-      <a href="{{ social[1].url | relative_url }}" title="{{ social[1].title }}" target="_blank" style="font-weight: bold; font-size: 0.9em; text-decoration: none; border: 1px solid var(--global-text-color); padding: 0.2em 0.4em; border-radius: 3px;">CV</a>
+      <a href="{{ social[1].url | relative_url }}" title="{{ social[1].title }}" target="_blank" style="font-weight: bold; font-size: 0.7em; text-decoration: none; border: 1px solid var(--global-text-color); padding: 0.15em 0.3em; border-radius: 3px;">CV</a>
     {% else %}
       <a href="{{ social[1].url }}" title="{{ social[1].title }}">
         {% if social[1].icon %}
